@@ -1,0 +1,41 @@
+@import "../untils/variables.scss";
+
+.nav {
+    &__head {
+        list-style-type: none;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;
+        margin-left: 93px;
+        list-style: none;
+    }
+
+    &__head,
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__head,
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__text {
+        color: ($primary-text-color);
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__text:hover,
+    &__text:focus,
+    &__link-active {
+        color: ($accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
