@@ -2,13 +2,15 @@
 
 .companies {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     &__icon {
         width: 170px;
         height: 92px;
         border: 1px solid ($primary-icon-color);
         border-radius: 4px;
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 
     &__icon:last-child {

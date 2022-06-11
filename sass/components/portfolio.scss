@@ -45,11 +45,11 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     &__card {
         background: ($title-text-color);
-        margin-right: 30px;
         margin-bottom: 30px;
         width: 370px;
     }
@@ -96,6 +96,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    &__card:last-child {
+        margin-bottom: 0;
+    }
+
     &__overlay-text {
         position: absolute;
         font-family: 'Roboto';
@@ -113,10 +117,6 @@
         transform: translateY(0%);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__card:nth-child(3n) {
-        margin-right: 0px;
     }
 
     &__description {

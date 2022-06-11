@@ -5,6 +5,7 @@
 
     &__head {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__logo {
@@ -19,6 +20,7 @@
         display: block;
         padding-top: 24px;
         padding-bottom: 25px;
+        margin-right: 93px;
     }
 
     &__logo>span {
